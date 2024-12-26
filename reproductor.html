@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor Audio</title>
+    <link rel="stylesheet" href="reproductor.css">
+</head>
+<body>
+    <div class="player">
+        <h1>Reproductor</h1>
+        <div class="now-playing">
+            <p id="song-title">Título canción</p>
+            <p id="song-artist">Nombre intérprete</p>
+        </div>
+        <audio id="audio-player" src=""></audio>
+        <div class="controls">
+            <button id="prev-btn">⏮️</button>
+            <button id="play-btn">▶️</button>
+            <button id="next-btn">⏭️</button>
+        </div>
+        <div class="progress-container">
+            <input type="range" id="progress-bar" value="0">
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Buscar canción..." />
+        </div>
+        <ul class="song-list">
+            <!-- Lista de canciones generada dinámicamente -->
+        </ul>
+    </div>
+    <script src="reproductor.js"></script>
+</body>
+</html>

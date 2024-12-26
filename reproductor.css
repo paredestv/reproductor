@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.player {
+    text-align: center;
+    max-width: 400px;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.now-playing {
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+button {
+    background: #333;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #555;
+}
+
+.progress-container {
+    margin: 10px 0;
+}
+
+#progress-bar {
+    width: 100%;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+#search-input {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background: #222;
+    color: #fff;
+}
+
+.song-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+}
+
+.song-list li {
+    padding: 10px;
+    background: #333;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.song-list li:hover {
+    background: #555;
+}
+
+.song-list li.active {
+    background: #0077ff;
+    color: #fff;
+}
